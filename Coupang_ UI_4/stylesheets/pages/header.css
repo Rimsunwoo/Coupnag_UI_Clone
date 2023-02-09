@@ -1,0 +1,331 @@
+/* 헤더 */
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid_container {
+  width: 1920px;
+  height: 116px;
+  display: grid;
+  grid-template-columns: 150px 209px 546px 80px 80px;
+  grid-template-rows: 90px 26px;
+  margin-top: 0px;
+}
+
+.logo {
+  background-image: url("/Mission-04/assets/logo/logo.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 176px 50px;
+  margin-top: 25px;
+  margin-right: 30px;
+}
+
+.button--category {
+  grid-row: 1/3;
+  background-color: var(--color-blue-600);
+  background-image: url("/Mission-04/assets/icon/hamburger.svg");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position-y: 30px;
+  background-position-x: 50%;
+  padding-top: 40px;
+  color: white;
+  font-size: 12px;
+  margin-right: 40px;
+  border: none;
+}
+
+.eventbar {
+  grid-row: 2/3;
+  grid-column: 2/4;
+}
+
+.myCoupang {
+  grid-row: 1/3;
+  grid-column: 4/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart {
+  grid-row: 1/3;
+  grid-column: 5/6;
+  padding-top: 25px;
+  padding-bottom: auto;
+  position: relative;
+}
+
+.search {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.search_form {
+  width: 516px;
+  height: 40px;
+  display: flex;
+  border: 2px solid var(--color-blue-600);
+}
+
+.select_form {
+  width: 135px;
+  height: 40px;
+  appearance: none;
+  background-image: url("/Mission-04/assets/icon/dropdown.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position-x: right;
+  background-position-y: center;
+  color: var(--color-gray-700);
+  border: none;
+  border-bottom: 2px solid var(--color-blue-600);
+}
+
+.input_form {
+  width: 301px;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 2px solid var(--color-blue-600);
+}
+
+input:focus {
+  outline: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+.mic {
+  width: 40px;
+  height: 40px;
+  background-image: url("/Mission-04/assets/icon/mic.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border: none;
+  border-bottom: 2px solid var(--color-blue-600);
+  background-color: white;
+}
+
+.find {
+  width: 40px;
+  height: 40px;
+  background-image: url("/Mission-04/assets/icon/search.svg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border: none;
+  border-bottom: 2px solid var(--color-blue-600);
+  background-color: white;
+}
+
+.event_list {
+  list-style: none;
+  width: 755px;
+  height: 100%;
+  margin-top: 0px;
+  padding-left: 0px;
+}
+
+.event_list li {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 26px;
+}
+
+.event_icon_left {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.event_icon_right {
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.myCoupang_btn {
+  border: none;
+  width: 49px;
+  height: 65px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-image: url("/Mission-04/assets/icon/my-coupang.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 0px;
+  background-size: 28px 27px;
+  font-size: 12px;
+  padding-top: 20px;
+  background-color: white;
+}
+
+.myCoupang_ul {
+  list-style: none;
+  width: 90px;
+  height: 137px;
+  border: 1px solid var(--color-gray-300);
+  position: absolute;
+  top: 110px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.is--active ul {
+  visibility: visible;
+}
+
+.myCoupang_ul::after {
+  border-color: white transparent;
+  border-style: solid;
+  border-width: 0 6px 10px 6.5px;
+  content: "";
+  position: absolute;
+  top: -7px;
+}
+
+.myCoupang_ul::before {
+  border-color: var(--color-gray-300) transparent;
+  border-style: solid;
+  border-width: 0 6px 8px 6.5px;
+  content: "";
+  position: absolute;
+  top: -8px;
+}
+
+.is--active {
+  visibility: visible;
+}
+
+.cart_btn {
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 49px;
+  height: 65px;
+  background-image: url("/Mission-04/assets/icon/cart.svg");
+  background-repeat: no-repeat;
+  background-size: 28px 27px;
+  background-position-x: center;
+  background-position-y: 0%;
+  padding-top: 20px;
+  font-size: 12px;
+  background-color: white;
+  position: relative;
+  border: none;
+}
+
+.cart_number {
+  background-color: var(--color-blue-600);
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 33px;
+  font-size: 12px;
+}
+
+.cart_message {
+  width: 288px;
+  height: 99px;
+  position: absolute;
+  top: 80px;
+  left: -235px;
+  background-color: white;
+  border: 1px solid var(--color-gray-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  visibility: hidden;
+}
+
+.cart_message::after {
+  border-color: white transparent;
+  border-style: solid;
+  border-width: 0 6px 10px 6.5px;
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 270px;
+}
+
+.cart_message::before {
+  border-color: var(--color-gray-300) transparent;
+  border-style: solid;
+  border-width: 0 6px 8px 6.5px;
+  content: "";
+  position: absolute;
+  left: 270px;
+  top: -8px;
+}
+
+.cart--empty .cart_message {
+  visibility: visible;
+}
+
+.a11y-hidden {
+  overflow: hidden;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  display: inline-block;
+}
+
+.navbar {
+  background-color: var(--color-gray-100);
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.navbar_ul {
+  width: 1020px;
+  height: 34px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.coupangPlay {
+  order: -2;
+}
+
+.marketing {
+  order: -1;
+  margin-right: 740px;
+}
+
+.navbar_ul li {
+  margin-left: 8px;
+  font-size: 12px;
+}
